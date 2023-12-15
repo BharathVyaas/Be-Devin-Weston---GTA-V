@@ -1,0 +1,25 @@
+<h2>10 Commandments of Weston</h2>
+<section>
+  <p>
+    <span>{{ this.currentItter[0] + 1 }}.</span>
+    {{ this.titles[this.currentItter[0]] }}
+  </p>
+  <p>{{ this.values[this.currentItter[0]] }}</p>
+</section>
+<section>
+  <p>
+    <span>{{ this.currentItter[1] + 1 }}.</span>
+    {{ this.titles[this.currentItter[1]] }}
+  </p>
+  <p>{{ this.values[this.currentItter[1]] }}</p>
+</section>
+<button
+  *ngIf="this.index < this.titles.length - 2; else placeholder"
+  (click)="nextHandler()"
+>
+  Next Commandments
+</button>
+
+<ng-template #placeholder>
+  <br />
+</ng-template>

@@ -1,0 +1,20 @@
+<section class="container">
+  <h2>Weston Alpha Fund</h2>
+  <p>
+    <span class="d-block">{{ info[0] }}</span>
+    <span class="d-block">{{ info[1] }}</span>
+  </p>
+  <ul>
+    <li *ngFor="let element of info[2]">{{ element }}</li>
+  </ul>
+  <h3>{{ info[3] }}</h3>
+  <ul>
+    <li *ngFor="let element of info[4]">{{ element }}</li>
+  </ul>
+  <h3>{{ info[5] }}</h3>
+  <ul>
+    <li>
+      {{ info[6][0] }}<small class="d-block">{{ info[6][1] }}</small>
+    </li>
+  </ul>
+</section>
