@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+/*   Reset   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+image {
+  display: inline-block;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*   Default    */
+
+html {
+  --text-gold: #bd9135;
+  --text-silver: #cfcfcf;
+
+  --head-bg: #333333;
+  --body-bg: #303030;
+  --body-bg-lines: #292929;
+
+  --head-silver-bg: #545456;
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+/*   Background Lines   */
+
+.grid-container {
+  z-index: -1;
+
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.bg-horizontal li {
+  display: block;
+  padding: 4px;
+  border-bottom: 2.8px solid var(--body-bg-lines);
+}
+
+.bg-vertical li {
+  display: inline-flex;
+  padding: 4px;
+  height: 100vh;
+  border-left: 2.8px solid var(--body-bg-lines);
+}
+
+/*   Util   */
+.light-effect {
+  background-image: linear-gradient(
+    to right top,
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-silver-bg)
+  );
+}
+
+/*   Header & Navbar   */
+header {
+  z-index: 1;
+
+  color: var(--text-gold);
+  background-image: linear-gradient(
+    to right top,
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-bg),
+    var(--head-silver-bg)
+  );
+  box-shadow: 3px 10px 20px 1px #00000080;
+}
+
+/*  Main - Head   */
+.head {
+  margin-top: 2rem;
+  max-width: 60vw;
+  border: 3px solid var(--text-gold);
+}
+.head-image {
+  border-right: 3px solid var(--text-gold);
+}
+
+.head-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.head-section-div {
+  color: var(--text-gold);
+  margin-block: auto;
+}
+
+.head-section-p__blockquote {
+  color: var(--text-silver);
+}

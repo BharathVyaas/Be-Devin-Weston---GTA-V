@@ -13,7 +13,7 @@ import { HeadData } from 'src/app/services/head-data.service';
  */
 export class HeadComponent implements OnInit, OnDestroy {
   image: string;
-  paragraph: [string, string];
+  paragraph: [string[], string[]];
 
   // Stores Head Container Data
   headData: HeadData;
@@ -35,7 +35,7 @@ export class HeadComponent implements OnInit, OnDestroy {
     this.image = '';
     this.imageIndex = 0;
     this.paragraphIndex = 0;
-    this.paragraph = ['', ''];
+    this.paragraph = [[''], ['']];
     this.imageChangeInterval = undefined;
     this.paragraphChangeInterval = undefined;
     this.imageLength = this.headData.getImageLength();

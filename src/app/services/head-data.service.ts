@@ -8,7 +8,11 @@ export class HeadData {
   private images: [string, string, string, string];
 
   // Paragraphs
-  private paragraphs: [[string, string], [string, string], [string, string]];
+  private paragraphs: [
+    [string[], string[]],
+    [string[], string[]],
+    [string[], string[]]
+  ];
 
   constructor() {
     this.images = [
@@ -20,16 +24,38 @@ export class HeadData {
 
     this.paragraphs = [
       [
-        `"6 black belts, 9 inches, 12 billion. I do things in threes so bring some friends, ladies. I'm joking, of course, but the point, is, be yourself. I'm already taken."`,
-        `-Devin Weston, Opening Bell Speech, BAWSAO 2009`,
+        [
+          '6 black belts, 9 inches, 12 billion.',
+          'I do things in threes so bring some friends, ladies.',
+          "I'm joking, of course, but the point, is, be yourself.",
+          "I'm already taken.",
+        ],
+        ['-Devin Weston, Opening Bell Speech,', 'BAWSAO 2009'],
       ],
       [
-        `"I change positions more than a Tijuana whore during spring break. The men in the room are laughing but let me tell you - human trafficking is no joke."`,
-        `-Devin Weston, Motivational speech, Edzell Foundation Youth Center, 2011`,
+        [
+          'I change positions more than a Tijuana whore during',
+          'spring break. The men in the room are laughing but',
+          'let me tell you - human trafficking is no joke.',
+        ],
+        [
+          '-Devin Weston, Motivational speech,',
+          'Edzell Foundation Youth Center 2011',
+        ],
       ],
       [
-        `"I'm not a Venture Capitalist. I'm an Adventure Capitalist. You've got to look at companies like women. Get them when they're vulnerable, strip them down, desecrate them to the point of collapse, then flip them around for the money shot. Only don't quote me on that, because I already did."`,
-        `-Devin Weston, Address to the Faculty of Economics, University of Los Santos, 2011`,
+        [
+          "I'm not a Venture Capitalist. I'm an Adventure",
+          "Capitalist. You've got to look at companies like",
+          "women. Get them when they're vulnerable, strip them",
+          'down, desecrate them to the point of collapse, then',
+          'flip them around for the money shot.',
+          "Only don't quote me on that, because I already did.",
+        ],
+        [
+          '-Devin Weston, Address to the Faculty of Economics,',
+          'University of Los Santos, 2011',
+        ],
       ],
     ];
   }

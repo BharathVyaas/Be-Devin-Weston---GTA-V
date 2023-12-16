@@ -1,12 +1,23 @@
-<article class="d-flex container">
+<article class="d-flex justify-content-between p-0 container head light-effect">
   <img
-    class="inline mx-5"
+    class="inline-block head-image"
     [src]="image"
     alt="Head-Images"
-    width="300"
+    width="280"
     height="200"
   />
-  <p class="inline">
-    {{ paragraph[0] }} <span class="text-primary">{{ paragraph[1] }}</span>
-  </p>
+  <section class="head-section">
+    <div class="head-section-div">
+      <p
+        class="d-block m-0 head-section-div__p"
+        *ngFor="let element of paragraph[0]"
+      >
+        {{ element }}
+      </p>
+    </div>
+    <div class="head-section-p__blockquote">
+      <p class="d-block m-0">{{ paragraph[1][0] }}</p>
+      <p class="d-block m-0">{{ paragraph[1][1] }}</p>
+    </div>
+  </section>
 </article>
