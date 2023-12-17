@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   box-sizing: border-box;
 }
 
@@ -22,7 +23,7 @@ html {
 
   --head-bg: #333333;
   --body-bg: #303030;
-  --body-bg-lines: #292929;
+  --body-bg-lines: #2a2a2a;
 
   --head-silver-bg: #545456;
 }
@@ -48,14 +49,14 @@ body {
 .bg-horizontal li {
   display: block;
   padding: 4px;
-  border-bottom: 2.8px solid var(--body-bg-lines);
+  border-bottom: 3px solid var(--body-bg-lines);
 }
 
 .bg-vertical li {
   display: inline-flex;
   padding: 4px;
   height: 100vh;
-  border-left: 2.8px solid var(--body-bg-lines);
+  border-left: 3px solid var(--body-bg-lines);
 }
 
 /*   Util   */
@@ -71,6 +72,14 @@ body {
   );
 }
 
+._border {
+  border: 3px solid var(--text-gold);
+}
+
+._gap {
+  margin-top: 2.2rem;
+}
+
 /*   Header & Navbar   */
 header {
   z-index: 1;
@@ -84,15 +93,14 @@ header {
     var(--head-bg),
     var(--head-silver-bg)
   );
-  box-shadow: 3px 10px 20px 1px #00000080;
+  box-shadow: 0 20px 20px 0 #1f1f1f;
 }
 
 /*  Main - Head   */
-.head {
-  margin-top: 2rem;
+._box-width {
   max-width: 60vw;
-  border: 3px solid var(--text-gold);
 }
+
 .head-image {
   border-right: 3px solid var(--text-gold);
 }
