@@ -394,10 +394,15 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: var(--text-gold);
 
   font-size: var(--font-size);
   letter-spacing: var(--letter-spacing);
   word-spacing: var(--word-spacing);
+}
+
+.holding span {
+  color: var(--text-silver);
 }
 
 /*  Main - Body - Weston Alpha Fund  */
