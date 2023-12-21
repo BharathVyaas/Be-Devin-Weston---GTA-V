@@ -16,7 +16,18 @@ import { HoldingsComponent } from './pages/holdings/holdings.component';
 import { WestonAlphaFundComponent } from './pages/weston-alpha-fund/weston-alpha-fund.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeadComponent, BodyComponent, FooterComponent, AboutDevinWestonComponent, MeetTheTeamComponent, CommandmentsofWestonComponent, HoldingsComponent, WestonAlphaFundComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HeadComponent,
+    BodyComponent,
+    FooterComponent,
+    AboutDevinWestonComponent,
+    MeetTheTeamComponent,
+    CommandmentsofWestonComponent,
+    HoldingsComponent,
+    WestonAlphaFundComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

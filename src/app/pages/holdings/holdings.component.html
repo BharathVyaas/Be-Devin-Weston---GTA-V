@@ -1,5 +1,15 @@
-<h1>Holdings</h1>
-<p>{{ this.title }}</p>
-<ul class="row">
-  <li class="col-xl-6" *ngFor="let element of values">{{ element }}</li>
-</ul>
+<div class="holdings-container light-effect">
+  <h1>Holdings</h1>
+  <section class="holdings-section">
+    <p class="holdings-title">{{ this.title }}</p>
+    <ul class="row holdings-list">
+      <li
+        [title]="element"
+        class="col-xl-6 holding"
+        *ngFor="let element of values"
+      >
+        {{ element }}
+      </li>
+    </ul>
+  </section>
+</div>

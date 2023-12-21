@@ -8,7 +8,7 @@ describe('CommandmentsofWestonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CommandmentsofWestonComponent]
+      declarations: [CommandmentsofWestonComponent],
     });
     fixture = TestBed.createComponent(CommandmentsofWestonComponent);
     component = fixture.componentInstance;

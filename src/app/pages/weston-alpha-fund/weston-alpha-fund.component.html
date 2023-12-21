@@ -1,20 +1,26 @@
-<section class="container">
+<section class="fund-container light-effect">
   <h1>Weston Alpha Fund</h1>
-  <p>
+  <p class="fund-description">
     <span class="d-block">{{ info[0] }}</span>
     <span class="d-block">{{ info[1] }}</span>
   </p>
-  <ul>
-    <li *ngFor="let element of info[2]">{{ element }}</li>
+  <ul class="fund-list">
+    <li class="fund-item" *ngFor="let element of info[2]">
+      <span>{{ element }}</span>
+    </li>
   </ul>
-  <h3>{{ info[3] }}</h3>
-  <ul>
-    <li *ngFor="let element of info[4]">{{ element }}</li>
+  <h3 class="fund-title">{{ info[3] }}</h3>
+  <ul class="fund-list">
+    <li class="fund-item" *ngFor="let element of info[4]">
+      <span>{{ element }}</span>
+    </li>
   </ul>
-  <h3>{{ info[5] }}</h3>
-  <ul>
-    <li>
-      {{ info[6][0] }}<small class="d-block">{{ info[6][1] }}</small>
+  <h3 class="fund-title">{{ info[5] }}</h3>
+  <ul class="fund-list">
+    <li class="fund-item">
+      <span
+        >{{ info[6][0] }}<small class="d-block">{{ info[6][1] }}</small></span
+      >
     </li>
   </ul>
 </section>
