@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
   width: 0px;
 }
 
+.scroll::-webkit-scrollbar {
+  width: 0;
+}
+
 /*   Default    */
 
 html {
@@ -22,7 +26,7 @@ html {
 
   --head-bg: #333333;
   --body-bg: #303030;
-  --body-bg-lines: #292929;
+  --body-bg-lines: #2b2b2b;
 
   --head-silver-bg: #545456;
 }
@@ -47,15 +51,15 @@ body {
 
 .bg-horizontal li {
   display: block;
-  padding: 4px;
-  border-bottom: 2.8px solid var(--body-bg-lines);
+  padding: 6px;
+  border-bottom: 3px solid var(--body-bg-lines);
 }
 
 .bg-vertical li {
   display: inline-flex;
-  padding: 4px;
+  padding: 6px;
   height: 100vh;
-  border-left: 2.8px solid var(--body-bg-lines);
+  border-left: 3px solid var(--body-bg-lines);
 }
 
 /*   Util   */
@@ -69,6 +73,18 @@ body {
     var(--head-bg),
     var(--head-silver-bg)
   );
+}
+
+._border {
+  border: 3px solid var(--text-gold);
+}
+
+._margin-top {
+  margin-top: 2rem;
+}
+
+._view-width {
+  max-width: 52rem;
 }
 
 /*   Header & Navbar   */
@@ -89,9 +105,9 @@ header {
 
 /*  Main - Head   */
 .head {
-  margin-top: 2rem;
-  max-width: 60vw;
-  border: 3px solid var(--text-gold);
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 13rem;
 }
 .head-image {
   border-right: 3px solid var(--text-gold);
@@ -100,6 +116,7 @@ header {
 .head-section {
   display: flex;
   flex-direction: column;
+  overflow: auto;
   justify-content: space-between;
   width: 100%;
   padding-left: 1rem;
@@ -113,3 +130,35 @@ header {
 .head-section-p__blockquote {
   color: var(--text-silver);
 }
+
+/*  Main - Body  */
+._body-container {
+  padding: 0;
+  height: 28rem;
+}
+
+._body-title-group {
+  min-width: 22rem;
+  max-width: 22rem;
+  height: 100%;
+}
+
+._body-title {
+  color: var(--text-gold);
+}
+
+._body-description {
+  padding: 0.8rem;
+  padding-bottom: 0;
+  overflow: scroll;
+}
+
+._body-description {
+  color: var(--text-silver);
+}
+
+._body-description h1 {
+  color: var(--text-gold);
+}
+
+/*  Media Query  */

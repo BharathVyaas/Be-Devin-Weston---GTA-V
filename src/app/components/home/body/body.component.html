@@ -1,20 +1,26 @@
-<section class="container">
-  <ul class="list-none">
-    <li>
-      <a routerLink="/">AboutDevinWeston</a>
+<section
+  class="container d-flex flex-row-reverse _view-width _margin-top _body-container light-effect"
+>
+  <ul class="list-unstyled _body-title-group">
+    <li class="_border">
+      <a class="_body-title" routerLink="/">AboutDevinWeston</a>
     </li>
-    <li>
-      <a routerLink="/MeetTheTeam">MeetTheTeam</a>
+    <li class="_border">
+      <a class="_body-title" routerLink="/MeetTheTeam">MeetTheTeam</a>
     </li>
-    <li>
-      <a routerLink="/CommandmentsofWeston">CommandmentsofWeston</a>
+    <li class="_border">
+      <a class="_body-title" routerLink="/CommandmentsofWeston"
+        >CommandmentsofWeston</a
+      >
     </li>
-    <li>
-      <a routerLink="/Holdings">Holdings</a>
+    <li class="_border">
+      <a class="_body-title" routerLink="/Holdings">Holdings</a>
     </li>
-    <li>
-      <a routerLink="/WestonAlphaFund">WestonAlphaFund</a>
+    <li class="_border">
+      <a class="_body-title" routerLink="/WestonAlphaFund">WestonAlphaFund</a>
     </li>
   </ul>
-  <router-outlet></router-outlet>
+  <article class="_body-description scroll _border">
+    <router-outlet></router-outlet>
+  </article>
 </section>
