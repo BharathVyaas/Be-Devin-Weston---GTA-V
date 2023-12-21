@@ -138,12 +138,18 @@ header {
 }
 
 ._body-title-group {
-  min-width: 22rem;
-  max-width: 22rem;
-  height: 100%;
+  transform: rotate(90deg) translate(0.4rem, 4rem) scaleX(1.444);
+}
+
+._body-title-group li {
+  border-inline: 3px solid var(--text-gold);
+  border-top: 3px solid var(--text-gold);
+  padding: 0.7rem 0.6rem;
 }
 
 ._body-title {
+  font-size: 1.4rem;
+  padding: 0.8rem;
   color: var(--text-gold);
 }
 
@@ -151,9 +157,6 @@ header {
   padding: 0.8rem;
   padding-bottom: 0;
   overflow: scroll;
-}
-
-._body-description {
   color: var(--text-silver);
 }
 
