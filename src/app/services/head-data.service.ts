@@ -34,9 +34,9 @@ export class HeadData {
       ],
       [
         [
-          'I change positions more than a Tijuana whore during',
+          '"I change positions more than a Tijuana whore during',
           'spring break. The men in the room are laughing but',
-          'let me tell you - human trafficking is no joke.',
+          'let me tell you - human trafficking is no joke."',
         ],
         [
           '-Devin Weston, Motivational speech,',
