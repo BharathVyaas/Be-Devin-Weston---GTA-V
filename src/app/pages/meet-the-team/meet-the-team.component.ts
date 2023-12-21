@@ -20,6 +20,7 @@ export class MeetTheTeamComponent {
   constructor(private bodyData: BodyData) {
     this.info = this.bodyData.getDetails('Meet The Team') as Details[];
     this.index = 0;
+    console.log(this.info);
   }
 
   selectNext() {

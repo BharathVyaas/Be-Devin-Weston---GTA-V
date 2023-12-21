@@ -16,26 +16,30 @@ export class BodyData implements BodyDataStructure {
       'About Devin Weston': `As much as anything, I'm a teacher. I made my first million when I was 23 and a year out of college. I spent it in a week. A million is nothing. I drop that on a diving watch. My ex-wife cost me $135 million and that was cheap at the price. A million will buy you a 3-bedroom house, a midsize sedan and maybe a week in Turks and Caicos, if you're lucky. Add a zero, then we can talk. I go in hard, I get out fast, I spin you around and I do it again, leaving you confused and spent, Investments, women, apocalyptic yoga, meditation - it doesn't matter that's how I do it 24/7 on every level. That's enlightenment. I'm a free thinker, but I'm also very spiritual, town two ashrams, a beach house and I really care about the environment. You've got to stay ahead of the game to make your own rules. As soon as YOU know about it, I'm already gone. A shadow. A ninja. A ghost. I'm the most famous person you've never heard of. I'm a killer but I also care. I got in early on the Acai Berry and walked away with 9 figures. I rode the bull till it split in 1997 and fleeced the bear till it bled in 2001. When I took a volcano-kite surfing trip to Nicaragua in 2007 without closing out my positions, I was so highly-leveraged that I crashed the market. They'll tell you it was the sub-prime mortgage crisis, but it was me. I've made so much money it bores me. Anyone can do it. All it takes is the right attitude, lifestyle choices and a big pair of balls, along with a massive heart and a great and positive outlook on life. I used to buy $250,000 sports cars and crash them at high speed as a joke. Now, I help indigenous farmers, surt for a couple of hours and then make a few million shorting hydro carbons.`,
       'Meet The Team': [
         {
+          img: '../../assets/Images/Body-Images/Devin Weston.png',
           name: `Devin Weston`,
-          description: `Chairman, President, CEO, Spiritual Renegade, currently single`,
+          description: `Chairman, President, CEO, Spiritual Renegade.`,
           'Devin Weston': `Devin graduated magna cum laude in Theater & Musical Therapy from San Andreas Community College without attending a single lecture. He was destined to be a leader. A year later he was al millionaire.
 
         A self-taught financial genius with an amazing tolerance for risk, high-intensity cardio and Kombucha, he revolutionized the hedge fund industry in the early 2000s by refusing to hedge at all. Since 2004 he has literally bought and deliberately bankrupted more companies than he's had hot dinners, though he has been on a raw food diet since 2000. One of the world's greatest living investors, the odds on him becoming president one day are 3:1. But he'd never take a bet that safe.`,
           next: `Meet Ray 'Slim' Navaro`,
         },
         {
+          img: '../../assets/Images/Body-Images/George Rucker.png',
           name: `Ray 'Slim' Navaro`,
           description: `Chief Investment Officer`,
           "Ray 'Slim' Navaro": `One of Devin Weston's first mentees, Slim starts the day off with a game of handball and a protein smoothie. Most of his deals are done in locker rooms. He grew up on the wrong side of the tracks - and has come to hate public transportation ever since. He credits Weston with saving him from a life behind bars, most recently in 2008 when he was accused of promoting junk mortgage-backed securities to elderly investors then shorting those same securities for massive profits before they defaulted. He was never found guilty. He is a true family man. He has a loving third wife and children. If it wasn't for his well deserved bonus, the Weston Alpha Fund would have been the top performing investment in the world last year.`,
           next: `Meet Molly Schultz`,
         },
         {
+          img: '../../assets/Images/Body-Images/Molly Schultz.png',
           name: `Molly Schultz`,
           description: `Senior Vice President and General Counsel`,
           'Molly Schultz': `Molly has a law degree from Vespucci University and an Msc in Corporate Raiding from ULSA. As a senior in high school she successfully sued three members of the teaching staff when she wasn't named homecoming queen. After training at Feist & Weich, she spent 5 years working for the in-house Litigation team at Globe Dil before moving to Redwood Cigarettes, where she successfully overturned 26 class action lawsuits linking tobacco use to lung cancer. She was headhunted by Devin at a Resistance Training For Rwanda' benefit workout in 2009. She does not have any hobbies`,
           next: `Meet George Rucker`,
         },
         {
+          img: "../../assets/Images/Body-Images/Ray 'Slim' Navaro.png",
           name: `George Rucker`,
           description: `Head Of Research`,
           'George Rucker': `After serving in the military in charge of strategic drone strikes, George claims to have worked on super secret government projects. He knows how to identify a weak spot, swoop in and surgically annihilate everyone while making a tidy profit, regardless of collateral damage. When it comes to sniffing out floundering companies with weak management and loose union ties and a workforce that can be kicked to the curb, George is the best in the business.`,

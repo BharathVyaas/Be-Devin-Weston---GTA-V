@@ -1,15 +1,27 @@
-<figure>
-  <figcaption>
-    <h1>{{ info[index].name }}</h1>
-    <p>{{ info[index].description }}</p>
-    <p>{{ info[index][info[index].name] }}</p>
-    <button
-      class="btn"
-      *ngIf="info[index + 1]; else placeholder"
-      (click)="selectNext()"
-    >
-      {{ info[index].next }}
-    </button>
-    <ng-template #placeholder><br /></ng-template>
-  </figcaption>
-</figure>
+<section class="team-section light-effect">
+  <h1 class="team-title">Meet The Team</h1>
+  <figure class="team-section-figure">
+    <img
+      class="_border team-image"
+      [src]="info[index]['img']"
+      [alt]="info[index].name"
+      width="180"
+      height="180"
+    />
+    <figcaption>
+      <div class="team-name-position">
+        <h2 class="team-name">{{ info[index].name }}</h2>
+        <small class="team-position">{{ info[index].description }}</small>
+      </div>
+      <p class="team-description scroll">{{ info[index][info[index].name] }}</p>
+      <button
+        class="team-next"
+        *ngIf="info[index + 1]; else placeholder"
+        (click)="selectNext()"
+      >
+        {{ info[index].next }}
+      </button>
+      <ng-template #placeholder><br /></ng-template>
+    </figcaption>
+  </figure>
+</section>
