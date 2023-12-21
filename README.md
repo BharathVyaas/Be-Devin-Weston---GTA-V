@@ -10,5 +10,5 @@ This project is a replica of a website found within the game GTA 5. Built with A
 
 Check out the [example file](example.md) for visual representations of the project. Here are two sample images:
 
-![Example Image 1](example/body.png)
-![Example Image 2](example/head.png)
+![Example Image 1](example/head.png)
+![Example Image 2](example/footer.png)
