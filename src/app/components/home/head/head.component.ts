@@ -54,11 +54,15 @@ export class HeadComponent implements OnInit, OnDestroy {
     this.imageChangeInterval = setInterval(() => {
       this.imageIndex = (this.imageIndex + 1) % this.imageLength;
       this.image = this.headData.getImage(this.imageIndex);
-    }, 3000);
-    this.paragraphChangeInterval = setInterval(() => {
-      this.paragraphIndex = (this.paragraphIndex + 1) % this.paragraphLength;
-      this.paragraph = this.headData.getParagraph(this.paragraphIndex);
-    }, 4000);
+    }, 3500);
+
+    const timeoutId = setTimeout((): void => {
+      this.paragraphChangeInterval = setInterval(() => {
+        this.paragraphIndex = (this.paragraphIndex + 1) % this.paragraphLength;
+        this.paragraph = this.headData.getParagraph(this.paragraphIndex);
+      }, 3500);
+      clearTimeout(timeoutId);
+    }, 1000);
   }
 
   ngOnDestroy(): void {

@@ -17,9 +17,9 @@ export class HeadData {
   constructor() {
     this.images = [
       '../../../../assets/Images/Head-Images/Img 1.jpg',
-      '../../../../assets/Images/Head-Images/test.jpg',
+      '../../../../assets/Images/Head-Images/Img 2.jpg',
       '../../../../assets/Images/Head-Images/Img 3.jpg',
-      '../../../../assets/Images/Head-Images/test.jpg',
+      '../../../../assets/Images/Head-Images/Img 4.jpg',
     ];
 
     this.paragraphs = [
